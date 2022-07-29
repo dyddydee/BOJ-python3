@@ -30,3 +30,13 @@ def post_order(node):
 
 n = int(input())
 tree = {}
+
+for i in range(n):
+    data, left_node, right_node = input().split(' ')
+    tree[data] = Node(data, left_node, right_node)
+
+pre_order(tree['A'])
+print()
+in_order(tree['A'])
+print()
+post_order(tree['A'])
